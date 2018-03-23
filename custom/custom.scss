@@ -12,15 +12,27 @@
     background: linear-gradient(180deg, transparentize($white, 0.5), $white);
     border-radius: 0.5rem;
   }
-  img.logo {
+  img.featured {
+    height: 500px;
+  }
+  img.borderless {
     border: none;
     background: none;
     box-shadow: none;
+  }
+  img.logo {
+    @extend img.borderless;
     max-height: 3em;
   }
   h1, h2, h3 {
     font-family: $font;
     color: $primary;
     text-transform: none;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2.author {
+    color: currentColor;
   }
 }
