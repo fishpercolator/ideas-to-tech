@@ -1,0 +1,26 @@
+.reveal {
+  $primary: #660080;
+  $white: #ffffff;
+  $font: Oxygen, sans-serif;
+  font-family: $font;
+
+  .slide-background {
+    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  section.present {
+    background: linear-gradient(180deg, transparentize($white, 0.5), $white);
+    border-radius: 0.5rem;
+  }
+  img.logo {
+    border: none;
+    background: none;
+    box-shadow: none;
+    max-height: 3em;
+  }
+  h1, h2, h3 {
+    font-family: $font;
+    color: $primary;
+    text-transform: none;
+  }
+}
